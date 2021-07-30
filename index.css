@@ -1,0 +1,164 @@
+/* design */
+
+  /* font */
+  body {
+    font-size: 15px;
+    font-family: Spartan sans-serif;
+  }
+  /* Section-A */
+  /* text */
+  h1  {
+    color: hsl(300, 43%, 22%);
+    font-size: 3em;
+  }
+
+
+  #Section-A  h3 {
+    margin:5px auto;
+    text-align: center;
+    color: hsl(300, 43%, 22%);
+    padding: 5px;
+  }
+
+  #Section-A img{
+    width: 16px;
+  }
+
+  .text {
+    text-align: center;
+    padding: 20px;
+  }
+
+  p {
+    color: hsl(303, 10%, 53%);
+  }
+  /* Section-B   */
+
+  #Section-B .name {
+    color: hsl(0, 0%, 100%);
+  }
+
+  #Section-B .description {
+    color: hsl(333, 80%, 67%);
+  }
+  #Section-B h3 {
+    text-align: left;
+    margin:5px auto;
+  }
+
+  .picture {
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin: 7px;
+  }
+
+  /* star center */
+  .star {
+    margin:5px auto;
+    display: block;
+    width: 35% ;
+
+
+
+  }
+
+  /* box */
+  /* Rating */
+  .rating {
+    margin:auto;
+    width:290px; /* 360px at pc */
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 10px;
+    margin: 10px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: block;
+
+  }
+  .testimonial {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    width: 290px;
+    margin: 10px auto;
+    padding: 20px;
+  }
+
+/* media */
+
+@media (min-width:700px) {
+
+  .container{
+    margin:50px auto;
+    width: 75%;
+    height: auto;
+  }
+
+
+/* Section A Grid */
+   .grid-top {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+  }
+
+  /* rating separation*/
+  .rating-box {
+    padding-top: 50px;
+  }
+
+  .rating{
+    position: relative;
+    width: 370px;
+    text-align: justify;
+  }
+  .rating:nth-child(2){
+    right:-20px;
+  }
+  .rating:nth-child(3){
+    right:-40px;
+  }
+
+  /* star alignment */
+  .star {
+    padding: 5px;
+    float: left;
+  }
+
+  /* Section B Grid */
+  .grid-bot {
+   display:grid;
+   grid-template-columns: repeat(3, 1fr);
+ }
+ /* Section B alignment */
+ .testimonial{
+   position: relative;
+   text-align: justify;
+   width: auto;
+   margin: 10px;
+ }
+ .testimonial:nth-child(2){
+   bottom:-20px;
+ }
+ .testimonial:nth-child(3){
+   bottom:-40px;
+ }
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
